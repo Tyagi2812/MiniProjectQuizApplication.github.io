@@ -1,0 +1,65 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!DOCTYPE html> <!--This describes that we are using the latest version of HTML i.e HTML 5-->
+<html lang="en"><!--This describes that the web page is designed in English language-->
+
+<head>
+  <!--Meta tag defines information about the data and specifies character set, page description, viewport settings-->
+    <meta charset="UTF-8"><!--Specifies the character encoding for the HTML document-->
+    <!--http-equiv provides an HTTP header for the value of the content attribute-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Specifies the value associated with http-equiv-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--It sets the width of the page to follow screen width of the device-->
+    <!--Initial scale part sets the initial zoom level when the page is first loaded by the browser-->
+    <script src="./app1.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>My Quiz Application</title>
+</head>
+
+<body>
+    
+    <div class="jumbotron"><!--big grey box used to indicate some impotant text-->
+       <!-- <div id="count">Start</div>-->
+       <!-- <p id="demo"></p> -->
+<!-- <button onclick="countdownTimeStart()">Start Timer</button> -->
+      
+
+        <div class="container"><!--Provides a responsive fixed width container-->
+            <div class="row"><!--It mainly holds columns in it-->
+                <div class="col-sm-5 offset-5"><!--small devices screen width-->
+                    <h1>Quiz Application</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="timer">Quiz closes in <span id="time">5:00</span> minutes!</div>
+
+    <div class="card" id="quiz">
+        <h3 class="card-header bg-info text-white">Quiz Time</h3>
+        <div class="card-body">
+            <h2 id="question">Question Text</h2>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" class="answer" id="a">
+                    <label id="a_text" for="a">Question</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" class="answer" id="b">
+                    <label id="b_text" for="b">Question</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" class="answer" id="c">
+                    <label id="c_text" for="c">Question</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" class="answer" id="d">
+                    <label id="d_text" for="d">Question</label>
+                </li>
+            </ul>
+            <a role="button" id="submit" class="btn btn-success" href="#">
+                Save & Next </a>
+        </div>
+
+    </div>
+</body>
+</html>
